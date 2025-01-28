@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "type": "single-selection",
+      "question": "What is the size of your business?",
+      "options": ["Solo", "Small (2-10 employees)", "Medium (11-50 employees)", "Large (50+ employees)"],
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "multi-selection",
+      "question": "Which areas of your business would you like to automate?",
+      "options": ["Customer support", "Marketing", "Financial processes", "Inventory management", "Data reporting"],
+      "required": false
+    },
+    {
+      "id": 3,
+      "type": "yes-no",
+      "question": "Do you currently use any automation tools?",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "open-text",
+      "question": "Please describe your biggest business challenge.",
+      "required": false
+    },
+    {
+      "id": 5,
+      "type": "single-selection",
+      "question": "If yes, which tools are you using?",
+      "options": ["CRM", "Email Marketing", "Accounting Software", "Project Management Tools"],
+      "required": true,
+      "dependsOn": {
+        "questionId": 3,
+        "value": "Yes"
+      }
+    }
+  ]
+  

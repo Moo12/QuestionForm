@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "type": "single-selection",
+      "question": "מה גודל העסק שלך?",
+      "options": [
+        "אני :)",
+        "2-10 עובדים.ות",
+        "11-50 עובדים.ות",
+        "50 פלוס"
+      ],
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "single-selection",
+      "question": "באיזה תחום העסק שלך?",
+      "options": [
+        "איקומרס",
+        "תיירות",
+        "טכנולוגיה",
+        "טיפול",
+        "חינוך",
+        "ייצור",
+        "אף אחד מהנל"
+      ],
+      "required": true
+    },
+    {
+      "id": 11,
+      "type": "open-text",
+      "question": "פרט",
+      "required": true,
+      "dependsOn": {
+        "questionId": 2,
+        "value": "אף אחד מהנל"
+      }
+    },
+    {
+      "id": 3,
+      "type": "yes-no",
+      "question": "האם יש לך אתר/ דף נחיתה?",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "open-text",
+      "question": "קישור לאתר / דף נחיתה",
+      "required": true,
+      "dependsOn": {
+        "questionId": 3,
+        "value": "Yes"
+      }
+    },
+    {
+      "id": 5,
+      "type": "yes-no",
+      "question": "האם היית רוצה ליצור אתר נחיתה לעסק",
+      "required": true,
+      "dependsOn": {
+        "questionId": 3,
+        "value": "No"
+      }
+    },
+    {
+      "id": 6,
+      "type": "single-selection",
+      "question": "כמה זמן העסק שלך קיים?",
+      "options": [
+        "בחיתוליו (פחות משנה)",
+        "מתחילים לרוץ (1-3 שנים)",
+        "מבוסס ורעב (3-5 שנים)",
+        "שועל.ה ותיק.ה (מעל חמש שנים)"
+      ],
+      "required": true
+    },
+    {
+      "id": 7,
+      "type": "multi-selection",
+      "question": "אילו אזורים בעסק שלך זועקים לאוטמיצה??",
+      "options": [
+        "שירות לקוחות",
+        "נינהול מלאים",
+        "קמפיינים דיגיטליים (ניהול לידים וכו)",
+        "תהליכי תשלום למיניהם: קבלות, חשבנויות, תלושי שכר וכו",
+        "אין לי מושג מה זה אוטומציה לכן אני פה",
+        "אחר"
+      ],
+      "required": true
+    }
+  ]
+  
